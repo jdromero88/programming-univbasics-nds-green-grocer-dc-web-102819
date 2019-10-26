@@ -6,9 +6,11 @@ def find_item_by_name_in_collection(name, collection)
   #collection.find_by(name: [name])
   i = 0
   while i < collection.length do
-    if name == collection[i][:item]
-      return collection[i]
-    end
+    data = collection[i]
+    if name === data[i][:item]
+      return data[i]
+    end  
+
     i += 1
   end
   nil
