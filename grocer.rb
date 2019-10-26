@@ -9,7 +9,7 @@ def find_item_by_name_in_collection(name, collection)
     data = collection[i]
     if name === data[i][:item]
       return data[i]
-    end  
+    end
 
     i += 1
   end
